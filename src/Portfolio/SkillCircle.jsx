@@ -22,4 +22,3 @@ const SkillCircle = ({ percentage, label, size = 100 }) => {
 };
 
 export default SkillCircle;
-

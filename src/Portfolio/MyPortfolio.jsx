@@ -45,10 +45,10 @@ const MyPortfolio = () => {
         </h2>
 
         {/* PORTFOLIO CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 max-w-5xl mx-auto pb-10 pt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 max-w-5xl mx-auto pb-10 pt-10" >
           {Portfolio.map((PORT, index) => (
             <div
-              key={index}
+              key={index} data-aos="fade-up"
               className="flex gap-4 items-start bg-[#1e1e1e] p-4 rounded-2xl w-full"
             >
               <img

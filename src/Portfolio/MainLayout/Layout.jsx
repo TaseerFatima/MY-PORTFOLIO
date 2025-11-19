@@ -12,9 +12,9 @@ const Layout = () => {
     <div className='bg-[#0D0D0D] w-full h-full'>  
       <Intro/>
       <AboutMe/>
-      <hr className="border-t-2 border-[#959494] w-96 mx-auto" />
+      <hr className="border-t-2 border-[#959494] md:w-96 w-40 mx-auto" />
       <Skills/>
-      <hr className="border-t-2 border-[#959494] w-96 mx-auto" />
+      <hr className="border-t-2 border-[#959494] md:w-96 w-40 mx-auto" />
       <Education/>
       <MyPortfolio/>
       <Footer/>

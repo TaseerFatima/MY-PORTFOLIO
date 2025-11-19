@@ -9,7 +9,7 @@ import MyPortfolio from '../MyPortfolio';
 const Layout = () => {
   return (
     <>
-    <div className='bg-[#0D0D0D] w-full h-full'>   
+    <div className='bg-[#0D0D0D] w-full h-full'>  
       <Intro/>
       <AboutMe/>
       <hr className="border-t-2 border-[#959494] w-96 mx-auto" />

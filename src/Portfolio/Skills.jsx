@@ -13,7 +13,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="about" className="w-full text-white py-16 px-6 md:px-20">
+    <section id="Skills" className="w-full text-white py-16 px-6 md:px-20">
       <h2 className="text-center text-4xl font-bold pb-7 pt-6 text-white" data-aos="fade-down" data-aos-duration="1000">
         My Skills
       </h2>

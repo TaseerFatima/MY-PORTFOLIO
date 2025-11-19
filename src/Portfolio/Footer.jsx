@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <>
-      <section id="about" className="w-full text-white py-16 px-6 md:px-20">
+      <section id="Contact" className="w-full text-white py-16 px-6 md:px-20">
 
         <h2
           className="text-center text-4xl font-extrabold tracking-wider mb-10"

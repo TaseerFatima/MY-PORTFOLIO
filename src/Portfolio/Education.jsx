@@ -20,7 +20,7 @@ const Education = () => {
     },
   ];
   return (
-    <section id="about" className="w-full text-white py-16 px-6 md:px-20">
+    <section id="Experience" className="w-full text-white py-16 px-6 md:px-20">
       <h2
         data-aos="fade-down"
         data-aos-duration="800"

@@ -13,7 +13,15 @@ const NavBar = () => {
     const handleScroll = () => {
       const sections = ["home", "about", "portfolio", "Contact"];
 
-      const scrollPosition = window.scrollY + 100;
+      const scrollPosition = window.scrollY + 150;
+
+      const pageBottom =
+    window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+
+  if (pageBottom) {
+    setActive("Contact");
+    return; 
+  }
 
       sections.forEach((id) => {
         const section = document.getElementById(id);
@@ -45,7 +53,7 @@ const NavBar = () => {
       <a href="#portfolio" className={linkClasses("portfolio")}>
         <Briefcase className="text-white" />
       </a>
-      <a href="#Contact" className={linkClasses("contact")}>
+      <a href="#Contact" className={linkClasses("Contact")}>
         <Mail className="text-white" />
       </a>
     </div>

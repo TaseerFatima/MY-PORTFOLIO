@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeIcon, Mail, Phone, } from "lucide-react";
+import { HomeIcon, Mail, Phone,Twitter,Github,Instagram,Linkedin } from "lucide-react";
 
 const Footer = () => {
   const CONTACT = [
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* CONTACT CARDS */}
         <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-14 max-w-5xl mx-auto pb-10 pt-10"
+          className="grid grid-cols-1 md:grid-cols-3 gap-14 max-w-5xl mx-auto pb-5 pt-10"
         >
           {CONTACT.map((cont, index) => (
             <div
@@ -78,6 +78,20 @@ const Footer = () => {
             </div>
           ))}
         </div>
+         <div className="items-center justify-center flex flex-row gap-4 pt-4 mx-auto" data-aos="zoom-in">
+            <a href="#" className="p-3 rounded-full bg-[#1e1e1e] ">
+               <Twitter className="text-white" />
+            </a>
+            <a href="#" className="p-3 rounded-full bg-[#1e1e1e] ">
+               <Linkedin className="text-white" />
+            </a>
+            <a href="https://github.com/TaseerFatima" target="_blank" className="p-3 rounded-full bg-[#1e1e1e] ">
+               <Github className="text-white" />
+            </a>
+            <a href="https://www.instagram.com/taseerfatimaaa.19/" target="_blank" className="p-3 rounded-full bg-[#1e1e1e] ">
+               <Instagram className="text-white" />
+            </a>
+          </div>
 
       </section>
     </>

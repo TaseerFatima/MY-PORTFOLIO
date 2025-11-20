@@ -4,7 +4,7 @@ import hello from "../assets/hello.png";
 
 const Intro = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center md:items-start w-full">
+    <div id="home" className="flex flex-col-reverse md:flex-row items-center md:items-start w-full">
       {/* Image */}
       <div
         className="h-80 w-60 md:h-96 md:w-64 m-5 md:m-9"

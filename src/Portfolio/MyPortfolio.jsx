@@ -58,7 +58,7 @@ const MyPortfolio = () => {
 
   return (
     <div>
-      <section id="portfolio" className="w-full text-white py-16 px-6 md:px-20">
+      <section id="portfolio" className=" text-white py-14 px-6 md:px-20">
         <h2
           data-aos="fade-down"
           data-aos-duration="800"
@@ -68,12 +68,12 @@ const MyPortfolio = () => {
         </h2>
 
         {/* PORTFOLIO CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 max-w-5xl mx-auto pb-10 pt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 max-w-5xl mx-auto pb-5 pt-10">
           {Portfolio.map((PORT, index) => (
             <div
               key={index}
               data-aos="fade-up"
-              className="flex gap-4 items-start bg-[#1e1e1e] p-4 rounded-2xl w-full"
+              className="flex gap-4  items-start bg-[#1e1e1e] p-4 rounded-2xl "
             >
               <img
                 src={PORT.img}

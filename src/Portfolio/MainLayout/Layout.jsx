@@ -10,7 +10,7 @@ import NavBar from './NavBar';
 const Layout = () => {
   return (
     <>
-    <div className='bg-[#0D0D0D] w-full h-full'> 
+    <div className='bg-[#0D0D0D] w-[90%] md:w-[80%] lg:w-[100%]   mx-auto h-full'> 
       <NavBar/> 
       <Intro/>
       <AboutMe/>

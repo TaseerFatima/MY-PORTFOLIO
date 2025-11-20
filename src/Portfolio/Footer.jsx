@@ -33,7 +33,7 @@ const Footer = () => {
         </h2>
 
         <h2
-          className="text-3xl font-bold text-white"
+          className="text-3xl font-bold text-white pl-10"
           data-aos="fade-right"
           data-aos-duration="900"
         >
@@ -41,7 +41,7 @@ const Footer = () => {
         </h2>
 
         <p
-          className="text-gray-400 font-semibold text-lg mt-2 leading-relaxed"
+          className="text-gray-400 font-semibold text-lg pt-3 leading-relaxed px-10"
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="150"
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* CONTACT CARDS */}
         <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-14 max-w-5xl mx-auto pb-5 pt-10"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 max-w-5xl mx-auto pb-5 pt-14"
         >
           {CONTACT.map((cont, index) => (
             <div

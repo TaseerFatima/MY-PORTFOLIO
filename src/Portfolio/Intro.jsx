@@ -4,14 +4,14 @@ import hello from "../assets/hello.png";
 
 const Intro = () => {
   return (
-    <div id="home" className="flex flex-col-reverse md:flex-row items-center md:items-start w-full">
+    <div id="home" className="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:pl-20">
       {/* Image */}
       <div
         className="h-80 w-60 md:h-96 md:w-64 m-5 md:m-9"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
-        <img src={img} className="w-full h-full object-cover" />
+        <img src={img} className="w-full h-full rounded-lg object-cover" />
       </div>
 
       {/* Intro */}

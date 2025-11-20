@@ -12,7 +12,7 @@ const AboutMe = () => {
         ABOUT<span className="text-[#FFB400]">ME</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
 
         <div
           data-aos="fade-right"

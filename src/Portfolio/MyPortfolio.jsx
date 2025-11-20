@@ -1,21 +1,13 @@
 import React from "react";
-// import { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 import Stopwatch from "../assets/Stopwatch.jpg";
 import Textutils from "../assets/Textutils.jpg";
 import tictactoe from "../assets/tictactoe.jpg";
 import vintageonline from "../assets/vintageonline.jpg";
-import CurrencyConvertor from "../assets/CurrencyConvertor.png";
-import FrontendPage from "../assets/FrontendPage.png";
+import CurrencyConvertor from "../assets/CurrencyConvertor.jpg";
+import FrontendPage from "../assets/FrontendPage.jpg";
 
 const MyPortfolio = () => {
-  // useEffect(() => {
-  //     AOS.init({
-  //       duration: 1000,
-  //       once: true,
-  //     });
-  //   }, []);
+
   const Portfolio = [
     {
       img: Stopwatch,
@@ -75,12 +67,14 @@ const MyPortfolio = () => {
               data-aos="fade-up"
               className="flex gap-4  items-start bg-[#1e1e1e] p-4 rounded-2xl "
             >
-              <img
-                src={PORT.img}
-                alt={PORT.title}
-                data-aos="zoom-out"
-                className="h-36 w-40 rounded-lg object-cover "
-              />
+             <div className="aspect-w-3 aspect-h-4">
+  <img
+    src={PORT.img}
+    alt={PORT.title}
+    className="w-full h-full object-cover rounded-lg"
+  />
+</div>
+
 
               <div>
                 <h3 className="font-semibold text-lg mt-1 text-white">

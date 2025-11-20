@@ -12,7 +12,13 @@ const NavBar = () => {
   return (
     <>
   
-      <div className="fixed right-4 top-1/2 -translate-y-1/2 flex flex-col gap-4">
+   <div
+  className="
+    hidden md:flex md:flex-col md:gap-4
+    fixed md:right-4 md:top-1/2 md:-translate-y-1/2
+  "
+>
+
         {/* Home */}
         <a
           href="#home"

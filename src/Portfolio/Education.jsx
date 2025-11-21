@@ -1,5 +1,5 @@
 import React from "react";
-import { Briefcase } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 const Education = () => {
   const experiences = [
@@ -36,7 +36,7 @@ const Education = () => {
         {experiences.map((exp, index) => (
           <div key={index} className="flex gap-4 items-start">
             <div className="bg-[#F1A500] rounded-full p-3 flex items-center justify-center">
-              <Briefcase size={24} className="text-white" />
+              <GraduationCap size={24} className="text-white" />
             </div>
             <div>
               <p className="text-sm text-gray-300">{exp.date}</p>

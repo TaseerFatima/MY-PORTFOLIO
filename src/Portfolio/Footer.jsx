@@ -1,5 +1,13 @@
 import React from "react";
-import { HomeIcon, Mail, Phone,Twitter,Github,Instagram,Linkedin } from "lucide-react";
+import {
+  HomeIcon,
+  Mail,
+  Phone,
+  Twitter,
+  Github,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 
 const Footer = () => {
   const CONTACT = [
@@ -16,14 +24,13 @@ const Footer = () => {
     {
       icon: <Phone size={24} className="text-white" />,
       title: "CALL ME",
-      desc: "+92 3024433195",
+      desc: "+92 3470869147",
     },
   ];
 
   return (
     <>
       <section id="Contact" className="w-full text-white py-16 px-6 md:px-20">
-
         <h2
           className="text-center text-4xl font-extrabold tracking-wider mb-10"
           data-aos="fade-down"
@@ -33,7 +40,7 @@ const Footer = () => {
         </h2>
 
         <h2
-          className="text-3xl font-bold text-white "
+          className="text-3xl font-bold text-white pt-7 "
           data-aos="fade-right"
           data-aos-duration="900"
         >
@@ -53,9 +60,7 @@ const Footer = () => {
         </p>
 
         {/* CONTACT CARDS */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 max-w-5xl mx-auto pb-5 pt-14"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 max-w-5xl mx-auto pb-5 pt-14">
           {CONTACT.map((cont, index) => (
             <div
               key={index}
@@ -78,21 +83,34 @@ const Footer = () => {
             </div>
           ))}
         </div>
-         <div className="items-center justify-center flex flex-row gap-4 pt-4 mx-auto" data-aos="zoom-in">
-            <a href="#" className="p-3 rounded-full bg-[#1e1e1e] ">
-               <Twitter className="text-white" />
-            </a>
-            <a href="#" className="p-3 rounded-full bg-[#1e1e1e] ">
-               <Linkedin className="text-white" />
-            </a>
-            <a href="https://github.com/TaseerFatima" target="_blank" className="p-3 rounded-full bg-[#1e1e1e] ">
-               <Github className="text-white" />
-            </a>
-            <a href="https://www.instagram.com/taseerfatimaaa.19/" target="_blank" className="p-3 rounded-full bg-[#1e1e1e] ">
-               <Instagram className="text-white" />
-            </a>
-          </div>
-
+        <div
+          className="items-center justify-center flex flex-row gap-4 pt-4 mx-auto"
+          data-aos="zoom-in"
+        >
+          <a href="#" className="p-3 rounded-full bg-[#1e1e1e] ">
+            <Twitter className="text-white" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/taseer-fatima-a97905374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank" className="p-3 rounded-full bg-[#1e1e1e] "
+          >
+            <Linkedin className="text-white" />
+          </a>
+          <a
+            href="https://github.com/TaseerFatima"
+            target="_blank"
+            className="p-3 rounded-full bg-[#1e1e1e] "
+          >
+            <Github className="text-white" />
+          </a>
+          <a
+            href="https://www.instagram.com/taseerfatimaaa.19/"
+            target="_blank"
+            className="p-3 rounded-full bg-[#1e1e1e] "
+          >
+            <Instagram className="text-white" />
+          </a>
+        </div>
       </section>
     </>
   );

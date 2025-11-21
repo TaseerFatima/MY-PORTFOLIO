@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Home, User, Briefcase, Mail } from "lucide-react";
+import { Home, User, Briefcase, Mail, GraduationCap, UserRoundPen } from "lucide-react";
 
 const NavBar = () => {
   const [active, setActive] = useState("home");
@@ -11,19 +11,30 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "portfolio", "Contact"];
+      const sectionIds = ["home", "about","Skills","Experience", "portfolio", "Contact"];
 
-      const scrollPosition = window.scrollY + 150;
+      const scrollPosition = window.scrollY + 200;
 
-      const pageBottom =
-    window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+      // const pageBottom =
+      //   window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
 
-  if (pageBottom) {
-    setActive("Contact");
-    return; 
-  }
+      // if (pageBottom) {
+      //   setActive("Contact");
+      //   return;
+      // }
 
-      sections.forEach((id) => {
+      // for (const sectionId of sectionIds.reverse()) {
+      //   const section = document.getElementById(sectionId);
+      //   if (section) {
+      //     const top = section.offsetTop;
+      //     const bottom = top + section.offsetHeight;
+      //     if (scrollPosition >= top && scrollPosition<bottom){
+      //       setActive(sectionId)
+      //     }
+      //   }
+      // }
+
+      sectionIds.reverse().forEach((id) => {
         const section = document.getElementById(id);
         if (section) {
           const top = section.offsetTop;
@@ -49,6 +60,12 @@ const NavBar = () => {
       </a>
       <a href="#about" className={linkClasses("about")}>
         <User className="text-white" />
+      </a>
+      <a href="#Skills" className={linkClasses("Skills")}>
+        <UserRoundPen className="text-white" />
+      </a>
+      <a href="#Experience" className={linkClasses("Experience")}>
+        <GraduationCap className="text-white" />
       </a>
       <a href="#portfolio" className={linkClasses("portfolio")}>
         <Briefcase className="text-white" />

@@ -30,10 +30,10 @@ const AboutMe = () => {
             <p><span className="font-semibold text-[#B3B3B3]">Languages :</span> English, Urdu</p>
             <p><span className="font-semibold text-[#B3B3B3]">Hobbies :</span> Wake Up, Code, Learn, Eat & Sleep!</p>
           </div>
-
-          <button className="mt-6 border border-[#FFB400] text-[#FFB400] px-7 py-2 rounded-full font-semibold hover:bg-[#FFB400] hover:text-black transition">
+<div className="mt-6">
+          <a href="#Skills" className=" border border-[#FFB400] text-[#FFB400] px-7 py-2 rounded-full font-semibold hover:bg-[#FFB400] hover:text-black transition">
             MORE ABOUT ME
-          </button>
+          </a></div>
         </div>
 
         <div

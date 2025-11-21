@@ -4,7 +4,10 @@ import hello from "../assets/hello.png";
 
 const Intro = () => {
   return (
-    <div id="home" className="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:pl-20">
+    <div
+      id="home"
+      className="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:pl-20"
+    >
       {/* Image */}
       <div
         className="h-80 w-auto md:h-96 md:w-64 m-5 md:m-9"
@@ -47,15 +50,16 @@ const Intro = () => {
             technologies.
           </p>
         </div>
-
-        <button
-          className="mt-6 border border-[#FFB400] text-[#FFB400] px-7 py-2 rounded-full font-semibold hover:bg-[#FFB400] hover:text-black"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="400"
-        >
-          MORE ABOUT ME
-        </button>
+        <div className="mt-9">
+          <a href="#about"
+            className="border border-[#FFB400] text-[#FFB400] px-7 py-2 rounded-full font-semibold hover:bg-[#FFB400] hover:text-white"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            MORE ABOUT ME
+          </a>
+        </div>
       </div>
     </div>
   );

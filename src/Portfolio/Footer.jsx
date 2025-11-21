@@ -33,7 +33,7 @@ const Footer = () => {
         </h2>
 
         <h2
-          className="text-3xl font-bold text-white pl-10"
+          className="text-3xl font-bold text-white "
           data-aos="fade-right"
           data-aos-duration="900"
         >
@@ -41,7 +41,7 @@ const Footer = () => {
         </h2>
 
         <p
-          className="text-gray-400 font-semibold text-lg pt-3 leading-relaxed px-10"
+          className="text-gray-400 font-semibold text-lg pt-3 leading-relaxed "
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="150"

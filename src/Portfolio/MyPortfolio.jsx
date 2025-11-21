@@ -62,32 +62,36 @@ const MyPortfolio = () => {
         {/* PORTFOLIO CARDS */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 max-w-5xl mx-auto pb-5 pt-10">
           {Portfolio.map((PORT, index) => (
-           <div
-  key={index}
-  data-aos="fade-up"
-  className="flex gap-4 items-start bg-[#1e1e1e] p-4 rounded-2xl"
->
-  <div className="aspect-w-3 aspect-h-4 w-40 flex-shrink-0">
-    <img
-      src={PORT.img}
-      alt={PORT.title}
-      className="w-full h-full object-cover rounded-lg"
-    />
-  </div>
-
-  <div>
-    <h3 className="font-semibold text-lg mt-1 text-white">{PORT.title}</h3>
-    <p className="text-gray-400 text-sm mt-2 leading-relaxed">{PORT.desc}</p>
-    <a
-      href={PORT.link}
-      target="_blank"
-      className="inline-block mt-3 px-4 py-2 rounded-lg bg-[#FFB400] text-white font-semibold hover:bg-yellow-600 transition"
-    >
-      View Project
-    </a>
-  </div>
+            <div
+              key={index}
+              data-aos="fade-up"
+              className="flex gap-4  items-start bg-[#1e1e1e] p-4 rounded-2xl "
+            >
+             <div className="aspect-w-3 aspect-h-4">
+  <img
+    src={PORT.img}
+    alt={PORT.title}
+    className="w-full h-full object-cover rounded-lg"
+  />
 </div>
 
+
+              <div>
+                <h3 className="font-semibold text-lg mt-1 text-white">
+                  {PORT.title}
+                </h3>
+                <p className="text-gray-400 text-sm mt-2 leading-relaxed">
+                  {PORT.desc}
+                </p>
+                <a
+                  href={PORT.link}
+                  target="_blank"
+                  className="inline-block mt-3 px-4 py-2 rounded-lg bg-[#FFB400] text-white font-semibold hover:bg-yellow-600 transition"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
           ))}
         </div>
       </section>
